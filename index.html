@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QxpoXq's GitHub Page</title>
+    
+    <!-- 先頭に基本的なスタイルを記述 -->
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             color: white;
             padding: 1rem;
             text-align: center;
-            border-bottom: 4px solid #4CAF50;
         }
         main {
-            padding: 2rem;
+            padding: 1rem;
             margin: auto;
             max-width: 800px;
-            background-color: #f9f9f9;
+            background-color: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         footer {
-            background-color: #333;
+            background-color: #4CAF50;
             color: white;
             text-align: center;
             padding: 0.5rem;
@@ -29,6 +35,10 @@
             bottom: 0;
             width: 100%;
         }
+    </style>
+
+    <!-- 中間にレイアウトやエフェクトのスタイルを追加 -->
+    <style>
         section {
             margin-bottom: 1.5rem;
             padding: 1.5rem;
@@ -44,7 +54,20 @@
         section p {
             line-height: 1.6;
         }
-    </style>    
+    </style>
+
+    <!-- 最後にリンクのスタイルやホバーエフェクトを追加 -->
+    <style>
+        .project-list a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .project-list a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -57,7 +80,7 @@
         </section>
         <section>
             <h2>Projects</h2>
-            <ul>
+            <ul class="project-list">
                 <li><a href="#">Project 1</a>: Description of project 1.</li>
                 <li><a href="#">Project 2</a>: Description of project 2.</li>
                 <li><a href="#">Project 3</a>: Description of project 3.</li>
